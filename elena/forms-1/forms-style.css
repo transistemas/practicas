@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    background-color: cyan;
+    color: black;
+    text-align: center;
+    box-shadow: 5px 5px  pink;
+    width: 90%;
+    line-height: 50px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    transition-duration: 500ms;
+    cursor: crosshair;
+}
+
+h1:hover {
+    background-color: pink;
+    box-shadow: 10px 10px cyan, 0px 0px 0px 100vh;
+}
+
+h1::after {
+    width: 100vw;
+    height: 10px;
+    background-color: black;
+    content: "";
+    position: absolute;
+    display: block;
+    margin-top: 25px;
+    left: 0;
+    pointer-events: none;
+}
+
