@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <script type="text/javascript">
+  function OtroGenero(val){
+   var element=document.getElementById('genero-otro');
+   if(val=='otro')
+     element.style.display='block';
+   else
+     element.style.display='none';
+  }
+  </script>
+</head>
+<body>
+  <form action="http://pic.giganetglobal.com/request-handler.php" enctype="multipart/form-data" method="post">
+    <label for="nombre">Nombre</label>
+    <input type="text" name="nombre" value="" id="nombre" placeholder="Ej: Juan">
+    <br>
+    <label for="apellido">Apellido</label>
+    <input type="text" name="apellido" value="" id="apellido" placeholder="Ej: Perez">
+    <br>
+    <label for="telefono">Teléfono</label>
+    <input type="number" id="telefono" name="telefono">
+    <br>
+    <label for="nombre">E-mail</label>
+    <input type="email" id="email" name="email">
+    <br>
+    <label for="genero">Género</label>
+    <select id="genero" name="Género" onchange='OtroGenero(this.value);'>
+      <option value="Agénero">Agénero</option>
+      <option value="Género fluido">Género Fluido</option>
+      <option value="Hombre Cis">Hombre Cis</option>
+      <option value="Hombre Trans">Hombre Trans</option>
+      <option value="Intersex">Intersex</option>
+      <option value="Mujer cis">Mujer Cis</option>
+      <option value="Mujer trans">Mujer Trans</option>
+      <option value="Sin Género">Sin Género</option>
+      <option value="otro">Otro</option>
+    </select>
+    <input type="text" name="Otro Género" id="genero-otro" style='display:none;'>
+    <br>
+    <label for="fecha-nac">Fecha de nacimiento</label>
+    <input type="date" id="fecha-nac" name="fecha-nac">
+    <br>
+    <label for="estado-civil">Estado Civil</label>
+    <select id="estado-civil" name="estado-civil">
+      <option value="casadx">Casadx</option>
+      <option value="divorciadx">Divorciadx</option>
+      <option value="solterx">Solterx</option>
+      <option value="unidx civilmente">Unidx civilmente</option>
+      <option value="viudx">Viudx</option>
+    </select> 
+    <br>
+    <input type="submit">
+  </form>
+</body>
+</html>
