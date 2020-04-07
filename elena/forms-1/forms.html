@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="forms-style.css">
+    <title>Práctica Forms</title>
+</head>
+<body>
+    <h1>
+        --.\°]:. Práctica de Formulario .:[°/.--
+    </h1>
+    <div class="separador"></div>
+    <h2>Complete el formulario y gane plata!</h2>
+    <form>
+
+        <!-- datos personales -->
+
+        <h3>- INFORMACIÓN PERSONAL -</h3>
+
+        <label for="fname">- Nombre -</label>
+        <input type="text" id="fname" name="fname" placeholder="ingrese su nombre"><br>
+        <label for="lname">- Apellido -</label>
+        <input type="text" id="lname" name="lname" placeholder="ingrese su apellido"><br>
+        <label for="birthday">- Nacimiento -</label>
+        <input type="date" id="birthday" name="birthday"><br>
+        <label for="phone-number">- Teléfono -</label>
+        <input type="number" name="phone-number" id="phone-number" placeholder="11 6276 2728"><br>
+        <label for="email">- e-mail -</label>
+        <input type="email" id="email" name="email" placeholder="ingrese su mail"><br>
+        <label class="label-select">- Indique su estado civil -</label>
+        <select class="select" id="marital-status" name="marital-status">
+            <option value="married">Casade</option>
+            <option value="divorced">Divorciade</option>
+            <option value="single">Soltere</option>
+            <option value="civil-union">Union civil</option>
+            <option value="widower">Viude</option>
+        </select>
+        
+        <h4>- elige un género, estoy segura de que perderás -</h4>
+
+        <input type="radio" class="gender-input-radio" id="agender" name="gender" value="agender">
+        <label for="agender" class="gender-label-radio">Agénero</label>
+        <input type="radio" class="gender-input-radio" id="gender-fluid" name="gender" value="gender-fluid">
+        <label for="gender-fluid" class="gender-label-radio">Género fluido</label>
+        <input type="radio" class="gender-input-radio" id="trans-woman" name="gender" value="trans-woman">
+        <label for="trans-woman" class="gender-label-radio">Mujer trans</label>
+        <input type="radio" class="gender-input-radio" id="trans-male" name="gender" value="trans-male">
+        <label for="trans-male" class="gender-label-radio">Hombre trans</label>
+        <input type="radio" class="gender-input-radio" id="cis-woman" name="gender" value="cis-woman">
+        <label for="cis-woman" class="gender-label-radio">Mujer cis</label>
+        <input type="radio" class="gender-input-radio" id="cis-male" name="gender" value="cis-male">
+        <label for="cis-male" class="gender-label-radio">Hombre cis</label>
+        <input type="radio" class="gender-input-radio" id="non-binary" name="gender" value="non-binary">
+        <label for="non-binary" class="gender-label-radio">No binarie</label>
+        <input type="radio" class="gender-input-radio" id="other-gender" name="gender" value="other-gender">
+        <label for="other-gender" class="gender-label-radio">otro</label>
+        
+        <!-- datos laborales -->
+
+        <h3>- INFORMACIÓN LABORAL -</h3>
+
+        <h4>- seleccione su área de interés -</h4>
+
+        <input  type="checkbox" id="gastronomy" name="gastronomy" value="gastronomy">
+        <label class="label-checkbox" for="gastronomy">Gastronómico</label>
+        <input  type="checkbox" id="pharmaceutical" name="pharmaceutical" value="pharmaceutical">
+        <label class="label-checkbox" for="pharmaceutical">Industria Farmacéutica</label>
+        <input type="checkbox" id="textil" name="textil" value="textil">
+        <label class="label-checkbox" for="textil">Textil</label>
+        <input type="checkbox" id="car-factory" name="car-factory" value="car-factory">
+        <label class="label-checkbox" for="car-factory">Automotriz</label>
+
+
+        <!-- submit -->
+
+        <br><input id="submit" type="submit" value="ENVIAR"><br>
+    </form>
+</body>
+</html>

@@ -1,0 +1,202 @@
+* {
+    padding: 0;
+    margin: 0;
+    cursor: crosshair;
+}
+
+h1 {
+    background-color: cyan;
+    color: black;
+    text-align: center;
+    box-shadow: 5px 5px  pink;
+    width: 90%;
+    line-height: 50px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    transition-duration: 500ms;
+}
+
+h1:hover {
+    background-color: pink;
+    box-shadow: 10px 10px cyan;
+}
+
+h2 {
+    text-align: center;
+    animation-name: negrita;
+    animation-duration: 1000ms;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    line-height: 40px;
+    margin-top: 20px;
+}
+
+@keyframes negrita {
+    from{background-color: cyan;}
+    to{background-color: pink;}
+}
+
+/* Formulario */
+
+form {
+    line-height: 30px;
+    display: block;
+}
+
+h3 {
+    line-height: 50px;
+    display: block;
+    background-color: cyan;
+    width: 90%;
+    text-align: center;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0 0 pink;
+    transition-duration: 300ms;
+}
+
+h3:hover {
+    background-color: pink;
+    box-shadow: 10px 10px cyan;
+}
+
+h4 {
+    line-height: 30px;
+    display: block;
+    background-color: cyan;
+    width: 90%;
+    text-align: center;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0 0 pink;
+    transition-duration: 300ms;
+}
+
+h4:hover {
+    background-color: pink;
+    box-shadow: 8px 8px cyan;
+}
+
+/* formulario información personal */
+
+label {
+    line-height: 25px;
+    background-color: pink;
+    display: block;
+    width: 110px;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+    margin-top: 15px;
+    box-shadow: 0 0 0 1px;
+    margin-left: 60px;
+    transition-duration: 300ms;
+}
+
+label:hover {
+    line-height: 35px;
+    box-shadow: 0 0 0 2px;
+    font-weight: bold;
+}
+
+input {
+    line-height: 25px;
+    background-color: cyan;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px 1px;
+    text-indent: 10px;
+    margin-left: 50px;
+}
+
+input:hover {
+    box-shadow: 3px 3px;
+}
+
+/* estilo del select de estado civil */
+
+.label-select {
+    width: 200px;
+    border-radius: 5px;
+}
+
+.select {
+    background-color: cyan;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px 1px;
+    text-indent: 10px;
+    margin-left: 50px;
+    font-size: 15px;
+}
+
+/* estilo del radio género */
+
+.gender-label-radio {
+    width: 200px;
+    height: 30px;
+    margin-left: 50px;
+    margin-top: -35px;
+    text-indent: 35px;
+    border-radius: 15px 5px 5px 15px;
+    text-align: center;
+}
+
+.gender-input-radio {
+    width: 20px;
+    height: 20px;
+    box-shadow: 0 0;
+    margin-top: 10px;
+    margin-left: 55px;
+}
+
+.gender-input-radio:hover {
+    box-shadow: 0 0;
+}
+
+.gender-label-radio:hover {
+    font-weight: bold;
+    line-height: 30px;
+}
+
+/* formulario información laboral */
+
+/* checkbox */
+
+.label-checkbox {
+    width: 200px;
+    line-height: 70px;
+    border-radius: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+} 
+
+.label-checkbox:hover {
+    opacity: 70%;
+    line-height: 70px;
+}
+
+
+/* botón submit */
+
+#submit {
+    margin: 50px auto;
+    box-shadow: 2px 2px;
+    display: block;
+    transition-duration: 500ms;
+    text-align: center;
+    line-height: 50px;
+    width: 170px;
+    text-indent: 0px;
+    font-weight: bold;
+}
+
+#submit:hover {
+    opacity: 85%;
+    box-shadow: 0 0 0 10px;
+    background-color: pink;
+    line-height: 80px;
+    width: 200px;
+    font-size: larger;
+    font-weight: bolder;
+}
