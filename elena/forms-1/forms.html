@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>
-        --.\°]:. Práctica de Formulario .:[°/.--
+        -.\ Práctica de Formulario /.-
     </h1>
     <div class="separador"></div>
     <h2>Complete el formulario y gane plata!</h2>
@@ -19,17 +19,17 @@
         <h3>- INFORMACIÓN PERSONAL -</h3>
 
         <label for="fname">- Nombre -</label>
-        <input type="text" id="fname" name="fname" placeholder="ingrese su nombre"><br>
+        <input type="text" id="fname" name="fname" placeholder="ingrese su nombre" required><br>
         <label for="lname">- Apellido -</label>
-        <input type="text" id="lname" name="lname" placeholder="ingrese su apellido"><br>
+        <input type="text" id="lname" name="lname" placeholder="ingrese su apellido" required><br>
         <label for="birthday">- Nacimiento -</label>
-        <input type="date" id="birthday" name="birthday"><br>
+        <input type="date" id="birthday" name="birthday" required><br>
         <label for="phone-number">- Teléfono -</label>
-        <input type="number" name="phone-number" id="phone-number" placeholder="11 6276 2728"><br>
+        <input type="number" name="phone-number" id="phone-number" placeholder="11 6276 2728" required><br>
         <label for="email">- e-mail -</label>
-        <input type="email" id="email" name="email" placeholder="ingrese su mail"><br>
+        <input type="email" id="email" name="email" placeholder="ingrese su mail" required><br>
         <label class="label-select">- Indique su estado civil -</label>
-        <select class="select" id="marital-status" name="marital-status">
+        <select class="select" id="marital-status" name="marital-status" required>
             <option value="married">Casade</option>
             <option value="divorced">Divorciade</option>
             <option value="single">Soltere</option>
@@ -39,21 +39,21 @@
         
         <h4>- elige un género, estoy segura de que perderás -</h4>
 
-        <input type="radio" class="gender-input-radio" id="agender" name="gender" value="agender">
+        <input type="radio" class="gender-input-radio" id="agender" name="gender" value="agender" required>
         <label for="agender" class="gender-label-radio">Agénero</label>
-        <input type="radio" class="gender-input-radio" id="gender-fluid" name="gender" value="gender-fluid">
+        <input type="radio" class="gender-input-radio" id="gender-fluid" name="gender" value="gender-fluid" required>
         <label for="gender-fluid" class="gender-label-radio">Género fluido</label>
-        <input type="radio" class="gender-input-radio" id="trans-woman" name="gender" value="trans-woman">
+        <input type="radio" class="gender-input-radio" id="trans-woman" name="gender" value="trans-woman" required>
         <label for="trans-woman" class="gender-label-radio">Mujer trans</label>
-        <input type="radio" class="gender-input-radio" id="trans-male" name="gender" value="trans-male">
+        <input type="radio" class="gender-input-radio" id="trans-male" name="gender" value="trans-male" required>
         <label for="trans-male" class="gender-label-radio">Hombre trans</label>
-        <input type="radio" class="gender-input-radio" id="cis-woman" name="gender" value="cis-woman">
+        <input type="radio" class="gender-input-radio" id="cis-woman" name="gender" value="cis-woman" required>
         <label for="cis-woman" class="gender-label-radio">Mujer cis</label>
-        <input type="radio" class="gender-input-radio" id="cis-male" name="gender" value="cis-male">
+        <input type="radio" class="gender-input-radio" id="cis-male" name="gender" value="cis-male" required>
         <label for="cis-male" class="gender-label-radio">Hombre cis</label>
-        <input type="radio" class="gender-input-radio" id="non-binary" name="gender" value="non-binary">
+        <input type="radio" class="gender-input-radio" id="non-binary" name="gender" value="non-binary" required>
         <label for="non-binary" class="gender-label-radio">No binarie</label>
-        <input type="radio" class="gender-input-radio" id="other-gender" name="gender" value="other-gender">
+        <input type="radio" class="gender-input-radio" id="other-gender" name="gender" value="other-gender" required>
         <label for="other-gender" class="gender-label-radio">Otro:</label>
         
         <!-- datos laborales -->
@@ -72,7 +72,7 @@
         <label class="label-checkbox" for="car-factory">Automotriz</label>
 
         <label for="expirience">- Experiencia -</label>
-        <input type="number" name="expirience" id="expirience" placeholder="indique sus años de experiencia"><br>
+        <input type="number" name="expirience" id="expirience" placeholder="indique sus años de experiencia" required><br>
 
         <label class="label-select">- Tiene monotributo? -</label>
         <select class="select" id="monotributo" name="monotributo">
@@ -90,22 +90,55 @@
 
         <h4>- Seleccione el dia y horario para comunicarnos -</h4>
 
-        <input  type="checkbox" id="monday" name="monday" value="monday">
-        <label class="label-checkbox-date" for="monday">Lunes</label>
-        <input  type="checkbox" id="tuesday" name="pharmaceutical" value="pharmaceutical">
-        <label class="label-checkbox-date" for="pharmaceutical">Martes</label>
-        <input type="checkbox" id="wednesday" name="textil" value="textil">
-        <label class="label-checkbox-date" for="textil">Miércoles</label>            
-        <input type="checkbox" id="thursday" name="car-factory" value="car-factory">
-        <label class="label-checkbox-date" for="car-factory">Jueves</label>
-        <input type="checkbox" id="friday" name="car-factory" value="car-factory">
-        <label class="label-checkbox-date" for="car-factory">Viernes</label>
+        <div class="checkbox-box">
+            <input  type="checkbox" class="days" id="monday" name="monday" value="monday">
+            <label class="label-checkbox-date" for="monday">Lunes</label>
+            <label class="label-date-from" for="time-from">desde:</label>
+            <input class="input-date-from" type="time" id="time-from" name="time-from">
+            <label class="label-date-to" for="time-to">hasta:</label>
+            <input class="input-date-to" type="time" id="time-to" name="time-to">
+        </div>
 
-        <label for="appt">Select a time:</label>
-        <input type="time" id="appt" name="appt">
+        <div class="checkbox-box">
+            <input  type="checkbox" class="days" id="tuesday" name="tuesday" value="tuesday">
+            <label class="label-checkbox-date" for="tuesday">Martes</label>
+            <label class="label-date-from" for="time-from">desde:</label>
+            <input class="input-date-from" type="time" id="time-from" name="time-from">
+            <label class="label-date-to" for="time-to">hasta:</label>
+            <input class="input-date-to" type="time" id="time-to" name="time-to">
+        </div>
 
-        
+        <div class="checkbox-box">
+            <input type="checkbox" class="days" id="wednesday" name="wednesday" value="wednesday">
+            <label class="label-checkbox-date" for="wednesday">Miércoles</label>
+            <label class="label-date-from" for="time-from">desde:</label>
+            <input class="input-date-from" type="time" id="time-from" name="time-from">
+            <label class="label-date-to" for="time-to">hasta:</label>
+            <input class="input-date-to" type="time" id="time-to" name="time-to">
+        </div>
 
+        <div class="checkbox-box">
+            <input type="checkbox" class="days" id="thursday" name="thursday" value="thursday">
+            <label class="label-checkbox-date" for="thursday">Jueves</label>
+            <label class="label-date-from" for="time-from">desde:</label>
+            <input class="input-date-from" type="time" id="time-from" name="time-from">
+            <label class="label-date-to" for="time-to">hasta:</label>
+            <input class="input-date-to" type="time" id="time-to" name="time-to">
+        </div>
+
+        <div class="checkbox-box">
+            <input type="checkbox" class="days" id="friday" name="friday" value="friday">
+            <label class="label-checkbox-date" for="friday">Viernes</label>
+            <label class="label-date-from" for="time-from">desde:</label>
+            <input class="input-date-from" type="time" id="time-from" name="time-from">
+            <label class="label-date-to" for="time-to">hasta:</label>
+            <input class="input-date-to" type="time" id="time-to" name="time-to">
+        </div>
+
+        <!-- carga de cv -->
+
+        <label class="label-file" for="myfile">Cargue su CV en PDF:</label>
+        <input type="file" id="myfile" name="myfile" required>
 
         <!-- submit -->
 

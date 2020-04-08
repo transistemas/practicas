@@ -2,6 +2,11 @@
     padding: 0;
     margin: 0;
     cursor: crosshair;
+    background-color: rgba(210, 131, 255, 0.678);
+}
+
+body {
+    min-width: 450px;
 }
 
 h1 {
@@ -174,7 +179,7 @@ input:hover {
 }
 
 .label-checkbox:hover {
-    opacity: 80%;
+    opacity: 70%;
     line-height: 70px;
 }
 
@@ -196,18 +201,142 @@ input:hover {
 
 /* dia y horario */
 
-#monday,
-#tueday,
-#wednesday,
-#thursday,
-#friday, {
+.days {
+    width: 40px;
+    height: 40px;
+    transition-duration: 250ms;
+    margin: initial;
+}
+
+.days:hover {
+    box-shadow: 0 0 0 2px;
+}
+
+.label-checkbox-date {
+    border-radius: 0 10px 10px 0;
+    line-height: 40px;
+    height: 40px;
+    width: 100px;
+    margin: initial;
+    margin-left: 2px;
+}
+
+.label-date-from, .label-date-to {
+    border-radius: 5px 0 0 5px;
+    width: 50px;
+    text-align: left;
+    text-indent: 5px;
+    margin-left: 5px;
+    line-height: 30px;
+    transition-duration: 300ms;
+    opacity: 0%;
+    visibility: hidden;
+}
+
+.label-date-from:hover, .label-date-to:hover {
+    font-weight: unset;
+    line-height: unset;
+}
+
+.input-date-from, .input-date-to {
+    border-radius: 10px;
+    width: 90px;
+    height: 20px;
+    border-radius: 0 5px 5px 0;
+    text-align: center;
+    margin-left: 1px;
+    margin-top: 15px;
+    transition-duration: 300ms;
+    opacity: 0%;
+    visibility: hidden;
+}
+
+.checkbox-box {
+    display: inline-flex;
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+#monday:checked ~ .label-date-from,
+#monday:checked ~ .label-date-to,
+#monday:checked ~ .input-date-from,
+#monday:checked ~ .input-date-to {
+    opacity: 100%;
+    visibility: visible;
+}
+
+#tuesday:checked ~ .label-date-from,
+#tuesday:checked ~ .label-date-to,
+#tuesday:checked ~ .input-date-from,
+#tuesday:checked ~ .input-date-to {
+    opacity: 100%;
+    visibility: visible;
+}
+
+#wednesday:checked ~ .label-date-from,
+#wednesday:checked ~ .label-date-to,
+#wednesday:checked ~ .input-date-from,
+#wednesday:checked ~ .input-date-to {
+    opacity: 100%;
+    visibility: visible;
+}
+
+#thursday:checked ~ .label-date-from,
+#thursday:checked ~ .label-date-to,
+#thursday:checked ~ .input-date-from,
+#thursday:checked ~ .input-date-to {
+    opacity: 100%;
+    visibility: visible;
+}
+
+#friday:checked ~ .label-date-from,
+#friday:checked ~ .label-date-to,
+#friday:checked ~ .input-date-from,
+#friday:checked ~ .input-date-to {
+    opacity: 100%;
+    visibility: visible;
+}
+
+/* carga de cv */
+
+/*.file-box {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100px;
+    background-color: red;
+    margin-top: 30px;
+}*/
+
+.label-file {
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 40px;
+    line-height: 40px;
+    font-weight: bolder;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+#myfile {
     display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 60px;
+    line-height: 60px;
+    font-weight: bolder;
+    margin-top: 5px;
 }
 
 /* botón submit */
 
 #submit {
-    margin: 50px auto;
+    margin: 30px auto;
     box-shadow: 2px 2px;
     display: block;
     transition-duration: 500ms;
