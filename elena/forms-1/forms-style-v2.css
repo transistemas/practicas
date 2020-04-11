@@ -1,0 +1,291 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-width: 400px;
+}
+
+h1 {
+    background-color: cyan;
+    color: black;
+    text-align: center;
+    box-shadow: 5px 5px  pink;
+    width: 90%;
+    line-height: 50px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    text-align: center;
+    line-height: 40px;
+    margin-top: 20px;
+}
+
+
+/* Formulario */
+
+h3 {
+    line-height: 50px;
+    display: block;
+    background-color: cyan;
+    width: 90%;
+    text-align: center;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0 0 pink;
+    transition-duration: 300ms;
+}
+
+h4 {
+    line-height: 30px;
+    display: block;
+    background-color: cyan;
+    width: 90%;
+    text-align: center;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0 0 pink;
+    transition-duration: 300ms;
+}
+
+
+/* formulario información personal */
+
+.personal {
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+label {
+    line-height: 25px;
+    width: 200px;
+    text-align: left;
+    margin-top: 50px;
+}
+
+input {
+    line-height: 30px;
+    width: 300px;
+    text-indent: 10px;
+    border: none;
+    border-bottom: 2px solid lightgrey;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+input:focus {
+    background-color: lightgreen;
+}
+
+/* estilo del select de estado civil */
+
+.select {
+    width: 300px;
+    text-indent: 5px;
+    border: none;
+    font-size: 12px;
+    margin-top: 10px;
+    border-bottom: 2px solid grey;
+}
+
+/* estilo del radio género */
+
+.radio-select {
+    border: solid black 2px;
+}
+
+.gender-input-radio {
+    float: left;
+    margin: 0;
+    margin-left: 40px;
+}
+
+.gender-label-radio {
+    float: right;
+    margin: 0;
+    margin-left: 40px;
+
+}
+
+
+/* formulario información laboral */
+
+/* checkbox */
+
+/*
+.label-checkbox {
+    width: 60%;
+    line-height: 70px;
+    border-radius: 10px;
+    opacity: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.label-checkbox:hover {
+    opacity: 80%;
+    line-height: 70px;
+}
+
+#gastronomy,
+#pharmaceutical,
+#textil,
+#car-factory {
+    display: none;
+}
+
+#gastronomy:checked + .label-checkbox,
+#pharmaceutical:checked + .label-checkbox,
+#textil:checked + .label-checkbox,
+#car-factory:checked + .label-checkbox {
+    box-shadow: 0 0 0 5px;
+    opacity: 100%;
+    font-weight: bold;
+}
+
+/* dia y horario */
+/*
+.days {
+    width: 40px;
+    height: 40px;
+    transition-duration: 250ms;
+    margin: initial;
+}
+
+.days:hover {
+    box-shadow: 0 0 0 2px;
+}
+
+.label-checkbox-date {
+    border-radius: 0 10px 10px 0;
+    line-height: 40px;
+    height: 40px;
+    width: 100px;
+    margin: initial;
+    margin-left: 2px;
+}
+
+.label-date-from, .label-date-to {
+    border-radius: 5px 0 0 5px;
+    width: 50px;
+    text-align: left;
+    text-indent: 5px;
+    margin-left: 5px;
+    line-height: 30px;
+    transition-duration: 300ms;
+    opacity: 0%;
+    visibility: hidden;
+}
+
+.label-date-from:hover, .label-date-to:hover {
+    font-weight: unset;
+    line-height: unset;
+}
+
+.input-date-from, .input-date-to {
+    border-radius: 10px;
+    width: 90px;
+    height: 20px;
+    border-radius: 0 5px 5px 0;
+    text-align: center;
+    margin-left: 1px;
+    margin-top: 15px;
+    transition-duration: 300ms;
+    opacity: 0%;
+    visibility: hidden;
+}
+
+.checkbox-box {
+    display: inline-flex;
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+#monday:checked ~ .label-date-from,
+#monday:checked ~ .label-date-to,
+#monday:checked ~ .input-date-from,
+#monday:checked ~ .input-date-to {
+    opacity: 100%;
+    visibility: visible;
+}
+
+#tuesday:checked ~ .label-date-from,
+#tuesday:checked ~ .label-date-to,
+#tuesday:checked ~ .input-date-from,
+#tuesday:checked ~ .input-date-to {
+    opacity: 100%;
+    visibility: visible;
+}
+
+#wednesday:checked ~ .label-date-from,
+#wednesday:checked ~ .label-date-to,
+#wednesday:checked ~ .input-date-from,
+#wednesday:checked ~ .input-date-to {
+    opacity: 100%;
+    visibility: visible;
+}
+
+#thursday:checked ~ .label-date-from,
+#thursday:checked ~ .label-date-to,
+#thursday:checked ~ .input-date-from,
+#thursday:checked ~ .input-date-to {
+    opacity: 100%;
+    visibility: visible;
+}
+
+#friday:checked ~ .label-date-from,
+#friday:checked ~ .label-date-to,
+#friday:checked ~ .input-date-from,
+#friday:checked ~ .input-date-to {
+    opacity: 100%;
+    visibility: visible;
+}
+
+
+.label-file {
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 40px;
+    line-height: 40px;
+    font-weight: bolder;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+#myfile {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 60px;
+    line-height: 60px;
+    font-weight: bolder;
+    margin-top: 5px;
+}
+
+/* botón submit */
+/*
+#submit {
+    margin: 30px auto;
+    display: block;
+    transition-duration: 200ms;
+    text-align: center;
+    line-height: 50px;
+    width: 170px;
+    text-indent: 0px;
+}
+
+#submit:hover {
+    opacity: 85%;
+    box-shadow: 2px 2px 3px;
+    font-weight: bold;
+}*/
