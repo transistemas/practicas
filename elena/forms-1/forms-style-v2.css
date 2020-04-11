@@ -5,18 +5,17 @@
 
 body {
     min-width: 400px;
+    background-color: lightgrey;
 }
 
 h1 {
-    background-color: cyan;
+    background-color: white;
     color: black;
     text-align: center;
-    box-shadow: 5px 5px  pink;
     width: 90%;
-    line-height: 50px;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
+    line-height: 60px;
+    margin: 20px auto;
+    box-shadow: 0px 0px 10px -3px;
 }
 
 h2 {
@@ -31,46 +30,44 @@ h2 {
 h3 {
     line-height: 50px;
     display: block;
-    background-color: cyan;
     width: 90%;
     text-align: center;
     margin: 20px auto;
-    border-radius: 10px;
-    box-shadow: 5px 5px 0 0 pink;
-    transition-duration: 300ms;
+    border-bottom: black solid 2px;
 }
 
 h4 {
     line-height: 30px;
     display: block;
-    background-color: cyan;
     width: 90%;
     text-align: center;
     margin: 20px auto;
     border-radius: 10px;
-    box-shadow: 5px 5px 0 0 pink;
-    transition-duration: 300ms;
 }
 
 
 /* formulario información personal */
 
 .personal {
-    width: 350px;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 30px;
+    box-shadow: 0px 0px 10px -3px grey;
 }
 
 label {
     line-height: 25px;
-    width: 200px;
+    width: 100%;
     text-align: left;
     margin-top: 50px;
 }
 
 input {
     line-height: 30px;
-    width: 300px;
+    width: 100%;
     text-indent: 10px;
     border: none;
     border-bottom: 2px solid lightgrey;
@@ -79,7 +76,7 @@ input {
 }
 
 input:focus {
-    background-color: lightgreen;
+    background-color: turquoise;
 }
 
 /* estilo del select de estado civil */
@@ -97,6 +94,7 @@ input:focus {
 
 .radio-select {
     border: solid black 2px;
+    height: 400px;
 }
 
 .gender-input-radio {
